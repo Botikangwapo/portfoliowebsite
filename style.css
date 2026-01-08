@@ -255,15 +255,13 @@ html,body{
 
 .container .content .social-links a{
     color: var(--text-main);
-}
-
-.container .content .social-links a svg:hover{
-    transform: translateY(-8px);
     transition: all 0.3s ease-in-out;
-    fill:   green;
 }
 
-
+.container .content .social-links a:hover{
+    color: var(--accent);
+    transform: translateY(-8px);
+}
 
 
 /* About Section */
@@ -818,6 +816,10 @@ footer{
      .container .content .button button:nth-child(2){
         width: 100%
     }
+
+    .services .services-body .serv-body .serv1{
+        height: auto;
+    }
 }
 
 
@@ -930,5 +932,9 @@ footer{
 
     .services .services-body .serv-body .serv1{
         height: auto !important;
+    }
+
+    .proj1{
+        padding: 0.5rem !important;
     }
 }
