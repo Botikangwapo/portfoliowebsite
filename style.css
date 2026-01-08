@@ -669,7 +669,7 @@ html,body{
     }
     .content{
         flex-direction: column-reverse;
-        width: 90% !important;
+        width: 95% !important;
         padding-top: 2em;
     }
 
