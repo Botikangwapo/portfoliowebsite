@@ -921,6 +921,11 @@ footer{
 
     }
 
+    .About-section .about-body .box4 .moto{
+        width: 90%;
+        font-size: 0.8rem;
+    } 
+
     .services .services-body .serv1 .card .view{
         margin-top: 0 !important;
     }
@@ -944,5 +949,6 @@ footer{
     .proj1{
         padding: 0.5rem !important;
     }
+
 
 }
