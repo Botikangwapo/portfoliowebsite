@@ -26,7 +26,7 @@ body{
   --accent: #ff9900;
   --accent-hover: #109C08;
 
-  --border-light: 1px solid #d9d9d9;
+  --border-light: 1px solid rgba(0, 0, 0, 0.144);
 
   --shadow-soft: 0 10px 15px -3px rgb(230,230,230),
                  0 4px 6px -2px rgba(209,214,255,0.74);
@@ -52,7 +52,7 @@ body.dark-mode {
   --accent: #ff9900;
   --accent-hover: #00ff88;
 
-  --border-light: #2c2c2c;
+  --border-light: #ffffff1e solid 1px;
 
   --shadow-soft: 0 10px 15px -3px rgba(0,0,0,0.6);
    
@@ -95,6 +95,10 @@ html,body{
 
 .header .logo h3{
    color: var(--text-main);
+}
+
+.header .logo h3 span{
+    color: var(--accent);
 }
 
 .darkmode{
@@ -271,7 +275,7 @@ html,body{
 .About-section{
     width: 100%;
     height: auto;
-    background:var(--bg-second);
+    background-color: var(--bg-main);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,7 +299,7 @@ html,body{
 .box1{
     grid-column: span 2 / span 2;
     grid-row: span 8 / span 8;
-    box-shadow: var(--shadow-soft);
+    border: var(--border-light);
 }
 
 .box1 img{
@@ -316,7 +320,7 @@ html,body{
     justify-content: center;
     height: auto;
     background-color: var(--bg-main);
-      box-shadow: var(--shadow-soft);
+    border: var(--border-light);
 }
 
 .About-section .about-body .box2 .about-content{
@@ -334,9 +338,9 @@ html,body{
     line-height: 1.7rem;
     color: var(--text-main);
     font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .box3{
@@ -348,7 +352,7 @@ html,body{
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
-      box-shadow: var(--shadow-soft);
+    border: var(--border-light);
     background-color: var(--bg-dark);
 }
 
@@ -374,10 +378,10 @@ html,body{
 
 .info1 p, .info3 p, 
 .info2 p, .info4 p{
-       font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .info1 svg, .info2 svg, .info3 svg, .info4 svg{
@@ -393,7 +397,8 @@ html,body{
     align-items: center;
     justify-content: center;
     text-align: center;
-     box-shadow: var(--shadow-soft);
+    padding: 1rem;
+    border: var(--border-light);
     background-color: var(--bg-main);
 }
 
@@ -424,7 +429,7 @@ html,body{
     flex-direction: column;
     gap: 30px;
     background-color: var(--bg-main);
-    box-shadow: var(--shadow-soft);
+    border: var(--border-light);
 }
 
 .About-section .about-body .box5 .box5-body{
@@ -494,13 +499,13 @@ html,body{
 }
 
 .services-body{
-   width: 90%;
-   display: flex;
-   align-items: center  ;
-   justify-content: center;
-   gap: 1rem;
-   flex-wrap: wrap;
-   height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center  ;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 .services .services-body .serv-body .serv1{
@@ -512,7 +517,7 @@ html,body{
     justify-content: center;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: var(--shadow-soft);
+    border: var(--border-light);
 }
 
 .services .services-body .serv-body{
@@ -628,7 +633,7 @@ html,body{
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
-     box-shadow: var(--shadow-soft);
+    border: var(--border-light);
 }
 
 .proj1 img{
@@ -724,7 +729,6 @@ footer{
         grid-column: span 2 / span 2 !important;
         grid-row: auto !important;
         height: auto;
-        min-height: 250px;
     }
 
 
@@ -916,7 +920,8 @@ footer{
         padding: 0.4rem;
 
     }
-     .services .services-body .serv1 .card .view{
+
+    .services .services-body .serv1 .card .view{
         margin-top: 0 !important;
     }
 
