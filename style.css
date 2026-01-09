@@ -707,6 +707,18 @@ footer{
 
 /* Responsive Design */
 
+@media (max-width: 1133px){
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        width: 270px;
+        padding: 1rem;
+    }
+
+    .services .services-body .serv1 .card{
+        gap: 15px !important;
+    }
+}
+
 @media (max-width: 1195px){
     .container{
         height: auto;
@@ -810,6 +822,52 @@ footer{
     }
 }
 
+@media (max-width: 904px){
+    .About-section .about-body .box5 .tech {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 902px){
+    .About-section .about-body .box5 .tech {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media (max-width: 890px){
+    .About-section .about-body .box5 .tech {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 859px){
+    .info{
+        gap: 20px;
+    }
+
+    .About-section .about-body .box5 .tech {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 815px){
+    .About-section .about-body {
+        width: 95%; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto; 
+        height: auto; 
+    }
+
+    .box1 img{
+        height: 300PX;
+    }
+
+    .box1, .box2, .box3, .box4, .box5 {
+        grid-column: span 2 / span 2 !important;
+        grid-row: auto !important;
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
     .About-section{
         align-items: center;
@@ -843,7 +901,7 @@ footer{
     }
 
     .About-section .about-body .box5 .tech {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(3, 1fr); 
     }
 
     .About-section .about-body .box2 .about-content h2 {
