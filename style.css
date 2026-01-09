@@ -586,7 +586,7 @@ html,body{
 .services .services-body .serv1 .card .view button:hover{
     background-color: var(--bg-dark);
     transition: all ease-in-out 0.3s;
-    color: var(--text-light);
+    color: var(--bg-main);
 }
 
 
