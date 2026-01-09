@@ -707,17 +707,41 @@ footer{
 
 /* Responsive Design */
 
+@media (max-width: 1195px){
+    .container{
+        height: auto;
+        padding-top: 5rem;
+    }
+    .container .content .content2 img{
+        height: 500px;
+        width: 600px;
+    }
+    .About-section .about-body{
+        width: 90%;
+    }
+
+    .About-section .about-body .box2 .about-content p{
+        font-size: 1rem;
+    }
+
+    .container .content{
+        width: 90%;
+    }
+}
+
 @media (max-width: 1024px) {
     .header .navbar{
         width: 90%;
     }
-
+    
+    /* About Section 
     .About-section .about-body {
         width: 95%; 
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: auto; 
         height: auto; 
     }
+    
 
 
     .box1, .box2, .box3, .box4, .box5 {
@@ -725,11 +749,12 @@ footer{
         grid-row: auto !important;
         height: auto;
     }
-
+    
+    */
 
     .box1 img{
         width: 100%;
-        height: 300px;
+        height: 715PX;
         object-fit: cover;
         border-radius: 5px;
     }
@@ -753,12 +778,36 @@ footer{
         height: 100%;
         width: 500px;
     }
+    
+    .About-section .about-body{
+        width: 90%;
+    }
 
+    .About-section .about-body .box2 .about-content p{
+        font-size: 0.9rem;
+    }
 
     .character{
         font-size: 2.3rem !important;
     }
 
+    .services .services-body .serv1 .card{
+        gap: 15px !important;
+    }
+
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        width: 240px;
+        padding: 1.4rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        padding: 0.8rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -774,7 +823,12 @@ footer{
     }
 
     .box1 {
-        height: 300px; 
+       height: auto;
+    }
+
+    .box1 img{
+        height: 300PX;
+        display: block;
     }
 
     .box2, .box3, .box4, .box5 {
@@ -819,6 +873,20 @@ footer{
 
     .services .services-body .serv-body .serv1{
         height: auto;
+    }
+}
+
+@media (max-width: 646px){
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px){
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        width: 100%;
     }
 }
 
@@ -904,7 +972,7 @@ footer{
     }
 
     .About-section .about-body .box2 .about-content p{
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
       .About-section .about-body .box5 .tech {
         grid-template-columns: repeat(3, 1fr);
@@ -940,6 +1008,8 @@ footer{
 
     .services .services-body .serv-body .serv1{
         height: auto !important;
+        width: 100%;
+        padding: 1rem;
     }
 
     .proj1{
