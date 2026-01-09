@@ -18,7 +18,8 @@ body{
   --bg-card: #ffffff;
   --bg-dark: #000000;
   --bg-second: #fafafa;
-    --bg-third: #000000;
+  --bg-third: #000000;
+  --bg-gradient: linear-gradient(270deg, #000000, #505050, #272727);
 
   --text-main: #000000;
   --text-muted: #333232;
@@ -30,13 +31,13 @@ body{
   --border-light: 1px solid rgba(0, 0, 0, 0.144);
 
   --shadow-soft: 0 10px 15px -3px rgb(230,230,230),
-                 0 4px 6px -2px rgba(209,214,255,0.74);
+    0 4px 6px -2px rgba(209,214,255,0.74);
 
-   --bg-filter: blur(20px);
-   --bg-blur:  rgba(255, 255, 255, 0.034);
+  --bg-filter: blur(20px);
+  --bg-blur:  rgba(255, 255, 255, 0.034);
 
 
-   --shadow-mode: 
+  --shadow-mode: 
     inset 2px 2px 5px rgba(0, 0, 0, 0.25),
     inset -2px -2px 5px rgba(255, 255, 255, 0.6);
 }
@@ -62,7 +63,7 @@ body.dark-mode {
    --bg-filter: blur(20px);
    --bg-blur:  rgba(0, 0, 0, 0.034);
 
-
+   --bg-gradient: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
 
    --shadow-mode:  inset 2px 2px 6px rgba(0, 0, 0, 0.6),
     inset -2px -2px 6px rgba(255, 255, 255, 0.08);
@@ -188,7 +189,7 @@ html,body{
 .container .content .character{
     font-size: 4rem;
     font-weight: 800;
-    background: var(--text-main);
+    background: var(--bg-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 200%;
