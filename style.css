@@ -855,7 +855,7 @@ footer{
     }
     .container{
         height: auto;
-        padding-top: 5rem;
+        padding-top: 2rem;
     }
     .container .content .content2 img{
         height: 500px;
@@ -1048,7 +1048,6 @@ footer{
 
     .container{
         height: auto;
-        padding-top: 3rem;
     }
 
     .container .content .content2 img{
@@ -1132,7 +1131,6 @@ footer{
     .content{
         flex-direction: column-reverse;
         width: 95% !important;
-        padding-top: 2em;
     }
 
     .content1{
