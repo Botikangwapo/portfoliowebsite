@@ -78,7 +78,7 @@ body{
   --bg-third: #000000;
   --bg-gradient: linear-gradient(270deg, #000000, #505050, #272727);
 
-  --text-main: #000000;
+  --text-main: #2a2a2a;
   --text-muted: #333232;
   --text-light: #ffffff;
 
@@ -107,7 +107,7 @@ body.dark-mode {
    --bg-second: #141414;
    --bg-dark: #ffffff;
 
-  --text-main: #ffffff;
+  --text-main: #d1d1d1;
   --text-muted: #cfcfcf;
 
   --accent: #ffae00;
@@ -156,6 +156,11 @@ html,body{
     color: var(--accent);
 }
 
+.modes{
+    position: relative;
+    cursor: pointer;
+}
+
 .modes p{
     color: var(--text-main);
 }
@@ -165,7 +170,7 @@ html,body{
     width: auto;
     right: 10%;
     height:auto;
-    top: 7%;
+    top: 8%;
     border: var(--border-light);
     border-radius: 10px;
     padding: 0.7rem;
@@ -192,6 +197,7 @@ html,body{
     padding: 0.4rem;
     border-radius: 12px;
     border: var(--border-light);
+    cursor: pointer;
 }
 
 .modal .modal-body .darkmode{
@@ -202,21 +208,19 @@ html,body{
     border: var(--border-light);
     padding: 0.4rem;
     border-radius: 12px;
+    cursor: pointer;
  }
 
  .modal .modal-body .lightmode p{
     color: var(--text-main);
     font-size: 0.9rem;
     margin-right: 8px;
-    font-weight: 200;
-    position: relative;
 }
 
 .modal .modal-body .darkmode p{
     color: var(--text-main);
     font-size: 0.9rem;
     margin-right: 8px;
-    font-weight: 200;
 }
 
  .modal .modal-body .lightmode svg{
@@ -789,7 +793,7 @@ html,body{
 }
 
 .header-bttom-body{
-    width: 300px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -806,7 +810,7 @@ html,body{
     align-items: center;
     justify-content: center;   
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 
@@ -1193,6 +1197,7 @@ footer{
 
     .header-bttom-body{
         width: auto !important;
+        padding: 0.8rem !important;
     }
 
     .services .services-body .serv-body .serv1{
