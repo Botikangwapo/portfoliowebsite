@@ -176,6 +176,7 @@ html,body{
     padding: 0.7rem;
     opacity: 0;
     z-index: 999;
+    background-color: var(--bg-second);
 }
 
 .modal.show{
@@ -198,6 +199,7 @@ html,body{
     border-radius: 12px;
     border: var(--border-light);
     cursor: pointer;
+    background-color: var(--bg-second);
 }
 
 .modal .modal-body .darkmode{
@@ -209,6 +211,7 @@ html,body{
     padding: 0.4rem;
     border-radius: 12px;
     cursor: pointer;
+    background-color: var(--bg-second);
  }
 
  .modal .modal-body .lightmode p{
@@ -1200,6 +1203,10 @@ footer{
         padding: 0.8rem !important;
     }
 
+    .header-bttom-body a{
+        padding: 0.3rem !important;
+    }
+
     .services .services-body .serv-body .serv1{
         height: auto !important;
         width: 100%;
@@ -1209,6 +1216,7 @@ footer{
     .proj1{
         padding: 0.5rem !important;
     }
-
+   
+     
 
 }
