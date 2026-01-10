@@ -499,7 +499,7 @@ html,body{
 }
 
 .info1 svg, .info2 svg, .info3 svg, .info4 svg{
-    color: var(--accent);
+    color: var(--text-main);
 }
 
 .box4{
@@ -965,6 +965,7 @@ footer{
 
 }
 
+
 @media (max-width: 1000px){
     .container{
         height: auto;
@@ -1305,5 +1306,4 @@ footer{
         display: block;
     }
      
-
 }
