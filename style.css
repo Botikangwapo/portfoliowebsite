@@ -11,6 +11,7 @@ body{
     overflow: hidden;
 }
 
+/* Preloader Styles 
 .preloader {
   position: fixed;
   inset: 0;
@@ -65,6 +66,8 @@ body{
   }
 }
 
+*/
+
 :root {
 
   --bg-main: #ffffff;
@@ -80,6 +83,7 @@ body{
   --text-light: #ffffff;
 
   --accent: #ffae00;
+  --darker: #000a9a;
   --accent-hover: #109C08;
 
   --border-light: 1px solid rgba(0, 0, 0, 0.144);
@@ -88,7 +92,7 @@ body{
     0 4px 6px -2px rgba(209,214,255,0.74);
 
   --bg-filter: blur(20px);
-  --bg-blur:  rgba(255, 255, 255, 0.034);
+  --bg-blur:  rgba(255, 255, 255, 0.51);
 
 
   --shadow-mode: 
@@ -115,7 +119,7 @@ body.dark-mode {
   --shadow-soft: 0 10px 15px -3px rgba(0,0,0,0.6);
    
    --bg-filter: blur(20px);
-   --bg-blur:  rgba(0, 0, 0, 0.034);
+   --bg-blur:  rgba(255, 255, 255, 0.088);
 
    --bg-gradient: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
 
@@ -138,10 +142,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    z-index: 999;
-    background: var(--bg-blur);
-    backdrop-filter: var(--bg-filter);
+    background-color: var(--bg-second);
 }
 
 .header .navbar{
@@ -152,42 +153,87 @@ html,body{
 }
 
 .header .logo h3{
-    color: var(--text-muted);
-}   
-
-.header .logo h3 span{
-   color: var(--accent);
+    color: var(--accent);
 }
 
-
-.darkmode{
-    width: 65px;
-    padding: 0.3rem;
-    background-color: var(--bg-card);
-    border-radius: 18px;
-    box-shadow: var(--shadow-mode);
+.modes p{
+    color: var(--text-main);
 }
 
-
-.darkmode-body{
-    width: 30px;
-    background-color: var(--bg-dark);
-    height: 30px;
-    border-radius:  50%;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-    
+.modal{
+    position: absolute;
+    width: auto;
+    right: 10%;
+    height:auto;
+    top: 7%;
+    border: var(--border-light);
+    border-radius: 10px;
+    padding: 0.7rem;
+    opacity: 0;
+    z-index: 999;
 }
 
-.darkmode-body.active{
-    transform: translateX(36px);
-    background-color: var(--text-muted);
+.modal.show{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
+
+.modal .modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal .modal-body .lightmode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0.4rem;
+    border-radius: 12px;
+    border: var(--border-light);
+}
+
+.modal .modal-body .darkmode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: var(--border-light);
+    padding: 0.4rem;
+    border-radius: 12px;
+ }
+
+ .modal .modal-body .lightmode p{
+    color: var(--text-main);
+    font-size: 0.9rem;
+    margin-right: 8px;
+    font-weight: 200;
+    position: relative;
+}
+
+.modal .modal-body .darkmode p{
+    color: var(--text-main);
+    font-size: 0.9rem;
+    margin-right: 8px;
+    font-weight: 200;
+}
+
+ .modal .modal-body .lightmode svg{
+    font-size: 1.2rem;
+    color: var(--accent);
+ }
+
+ .modal .modal-body .darkmode svg{
+    font-size: 1.2rem;
+    color: var(--darker);
+ }
 
 /* Home Section */
 
 .container{
     width: 100%;
-    height: 1100px;
+    height: 900px;
     background:var(--bg-second);
     background-size: cover;
     background-repeat: no-repeat;
@@ -750,16 +796,24 @@ html,body{
     padding: 1rem;
     background: var(--bg-blur);
     backdrop-filter: var(--bg-filter);
-    gap: 35px;
+    gap: 26px;
     border-radius: 10px;
 }
 
 .header-bttom-body a{
     color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
+
 .header-bttom-body a:hover{
-    color: var(--accent);
+    background-color: var(--accent);
+    transition: all 0.3s ease-in-out;
+    outline: auto;
 }
 
 
@@ -796,6 +850,9 @@ footer{
 }
 
 @media (max-width: 1195px){
+    .header .navbar{
+        width: 90%;
+    }
     .container{
         height: auto;
         padding-top: 5rem;
@@ -1137,7 +1194,7 @@ footer{
     }
 
     .header-bttom-body{
-        width: 230px !important;
+        width: auto !important;
     }
 
     .services .services-body .serv-body .serv1{
