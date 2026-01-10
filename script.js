@@ -20,11 +20,11 @@ darkToggle.addEventListener("click", () => {
 
 
 
-//window.addEventListener("load", () => {
-    //const loader = document.querySelector(".preloader");
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".preloader");
 
-   // setTimeout(() => {
-    //  loader.classList.add("hide");
-    //}, 3200); 
-//});
+   setTimeout(() => {
+      loader.classList.add("hide");
+    }, 3200); 
+});
 
