@@ -3,6 +3,7 @@ const lightToggle = document.querySelector(".lightmode");
 const bodydark = document.querySelector(".darkmode-body");
 const mode = document.querySelector(".modes");
 const modal = document.querySelector(".modal");
+const themeLoader = document.querySelector(".theme-loader");
 
 mode.addEventListener("click", () => {
     modal.classList.toggle("show");
@@ -17,7 +18,6 @@ darkToggle.addEventListener("click", () => {
     document.body.classList.add("dark-mode");
     bodydark.classList.add("active");
 });
-
 
 
 window.addEventListener("load", () => {

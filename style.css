@@ -11,7 +11,7 @@ body{
     overflow: hidden;
 }
 
-/* Preloader Styles 
+
 .preloader {
   position: fixed;
   inset: 0;
@@ -24,11 +24,6 @@ body{
   gap: 20px;
   z-index: 9999;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-.preloader h1 {
-  font-size: 3rem;
-  color: var(--text-main);
 }
 
 .preloader.hide {
@@ -66,7 +61,7 @@ body{
   }
 }
 
-*/
+
 
 :root {
 
@@ -580,7 +575,7 @@ html,body{
 }
 
 .About-section .about-content .box5 .tech, .tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9{
-    border: 1px #D9D9D9 solid;
+    border: var(--border-light);
     padding: 0.8rem;
     font-size: 0.9rem;
 }
@@ -768,6 +763,7 @@ html,body{
     width: 100%;
     height: 250px;
     object-fit:cover;
+    display: block;
 }
 
 .proj-content{
@@ -857,6 +853,11 @@ footer{
 
     .services .services-body .serv1 .card{
         gap: 15px !important;
+    }
+
+    .proj1{
+        width: 100%;
+        max-width: 300px;
     }
 }
 
@@ -957,13 +958,56 @@ footer{
         padding: 1.4rem;
     }
 
+    .proj1{
+        width: 100%;
+        max-width: 290px;
+    }
+
 }
 
 @media (max-width: 1000px){
+    .container{
+        height: auto;
+    }
     .services .services-body .serv-body .serv1{
         height: auto;
         padding: 0.8rem;
     }
+}
+
+
+@media (max-width: 937px){
+   
+    .services .services-body .serv-body .serv1{       
+        width: 230px;
+    }
+
+    .container{
+        height: auto;
+    }
+
+    .container .content .content1{
+        width: auto;
+    }
+
+    .container .content .content2 img{
+        width: 450px;
+        height: 450px;
+    }
+
+    .container .content .content1 .button{
+        width: 100% !important;
+    }
+
+    .container .content .content1 .button button{
+        width: 100% !important;
+
+    }
+
+     .character{
+        font-size: 1.8rem !important;
+    }
+
 }
 
 @media (max-width: 904px){
@@ -975,6 +1019,16 @@ footer{
 @media (max-width: 902px){
     .About-section .about-body .box5 .tech {
         grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .services .services-body .serv-body .serv1{
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .proj1{
+        width: 100%;
+        max-width: 360px;
     }
 }
 @media (max-width: 890px){
@@ -991,6 +1045,7 @@ footer{
     .About-section .about-body .box5 .tech {
         grid-template-columns: repeat(3, 1fr); 
     }
+
 }
 
 @media (max-width: 815px){
@@ -1009,6 +1064,33 @@ footer{
         grid-column: span 2 / span 2 !important;
         grid-row: auto !important;
         height: auto;
+    }
+}
+
+@media (max-width: 883px){
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 882px){
+    .container .content .content2 img{
+        width: 100%;
+        max-width: 100% ;
+        height: 100%;
+    }
+}
+
+@media (max-width: 794px){
+    .services .services-body .serv-body{
+       width: 100%;
+    }
+    .services .services-body .serv-body .serv1{
+        height: auto;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -1072,9 +1154,6 @@ footer{
         width: 100%
     }
 
-    .services .services-body .serv-body .serv1{
-        height: auto;
-    }
 }
 
 @media (max-width: 646px){
@@ -1089,6 +1168,7 @@ footer{
         height: auto;
         width: 100%;
     }
+
 }
 
 
@@ -1218,9 +1298,12 @@ footer{
     }
 
     .proj1{
-        padding: 0.5rem !important;
+        padding-bottom:  0.5rem !important;
     }
-   
+     
+    .proj1 img{
+        display: block;
+    }
      
 
 }
