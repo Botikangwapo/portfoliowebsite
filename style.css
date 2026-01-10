@@ -578,6 +578,7 @@ html,body{
     border: var(--border-light);
     padding: 0.8rem;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover, .tech5:hover, .tech6:hover, .tech7:hover, .tech8:hover, .tech9:hover{
