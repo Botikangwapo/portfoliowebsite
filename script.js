@@ -36,14 +36,15 @@ darkToggle.addEventListener("click", () => {
     e.stopPropagation();
 });
 
-
 window.addEventListener("load", () => {
+    html.style.overflow = "hidden";
+    body.style.overflow = "hidden"
     const loader = document.querySelector(".preloader");
-
+    
    setTimeout(() => {
       loader.classList.add("hide");
-        body.classList.add("loaded");  // enable scroll
-        html.classList.add("loaded");  // enable scroll on <html> if needed
+      html.style.overflow = "auto";
+      body.style.overflow = "auto";
     }, 3200); 
 });
 

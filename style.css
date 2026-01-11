@@ -7,20 +7,10 @@
     user-select: none;
 }
 
-/* Prevent scrolling initially */
-html, body {
-    overflow: hidden;  /* no scroll while preloader is visible */
-}
-
-/* After page loads */
-html.loaded, body.loaded {
-    overflow: auto;    /* enable scrolling */
-}
-
 .preloader {
   position: fixed;
   inset: 0;
-  height: 100vh;
+  height: 100%;
   background: var(--bg-main);
   display: flex;
   justify-content: center;
@@ -32,7 +22,7 @@ html.loaded, body.loaded {
 
 .preloader.hide {
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
 }
 
 .loader {
@@ -531,7 +521,7 @@ html,body{
     text-align: center;
     padding: 1rem;
     border: var(--border-light);
-    background-color: var(--bg-main);
+    background-color: black;
 }
 
 .About-section .about-body .box4 .moto{
