@@ -4,10 +4,11 @@ const bodydark = document.querySelector(".darkmode-body");
 const mode = document.querySelector(".modes");
 const modal = document.querySelector(".modal");
 const themeLoader = document.querySelector(".theme-loader");
+const body = document.body;
+const html = document.documentElement;
 
 function showmodal() {
     modal.classList.toggle("show");
-    
 }  
 
 function removemodal() {
@@ -41,7 +42,8 @@ window.addEventListener("load", () => {
 
    setTimeout(() => {
       loader.classList.add("hide");
+        body.classList.add("loaded");  // enable scroll
+        html.classList.add("loaded");  // enable scroll on <html> if needed
     }, 3200); 
 });
 
- 

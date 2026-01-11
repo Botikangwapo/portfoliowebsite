@@ -7,10 +7,15 @@
     user-select: none;
 }
 
-body{
-    overflow: hidden;
+/* Prevent scrolling initially */
+html, body {
+    overflow: hidden;  /* no scroll while preloader is visible */
 }
 
+/* After page loads */
+html.loaded, body.loaded {
+    overflow: auto;    /* enable scrolling */
+}
 
 .preloader {
   position: fixed;
@@ -20,7 +25,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 20px;
   z-index: 9999;
   transition: opacity 0.6s ease, visibility 0.1s ease;
