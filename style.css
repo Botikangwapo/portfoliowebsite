@@ -23,7 +23,7 @@ body{
   flex-direction: column;
   gap: 20px;
   z-index: 9999;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.1s ease;
 }
 
 .preloader.hide {
@@ -158,6 +158,10 @@ html,body{
 
 .modes p{
     color: var(--text-main);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .modal{
@@ -213,12 +217,20 @@ html,body{
     color: var(--text-main);
     font-size: 0.9rem;
     margin-right: 8px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .modal .modal-body .darkmode p{
     color: var(--text-main);
     font-size: 0.9rem;
     margin-right: 8px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
  .modal .modal-body .lightmode svg{
@@ -841,6 +853,11 @@ footer{
 }
 
 
+.contact{
+    height: 700px;
+    width: 100%;
+    background-color: var(--bg-main);
+}
 
 
 /* Responsive Design */
@@ -1301,10 +1318,12 @@ footer{
 
     .proj1{
         padding-bottom:  0.5rem !important;
+        height: auto !important;
     }
      
     .proj1 img{
         display: block;
+        height: 200px;
     }
      
 }
