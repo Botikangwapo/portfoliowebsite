@@ -642,6 +642,7 @@ html,body{
 
 .box6 .box6-body h1{
     font-weight: 800;
+    color: var(--text-main);
 }
 
 .box6 .box6-body h1 span{
