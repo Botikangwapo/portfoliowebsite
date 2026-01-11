@@ -62,11 +62,14 @@
   --bg-main: #ffffff;
   --bg-glass: rgba(255, 255, 255, 0.35);
   --bg-card: #ffffff;
-  --bg-dark: #000000;
+  --bg-dark: #000000;   
   --bg-second: #fafafa;
   --bg-third: #000000;
   --bg-gradient: linear-gradient(270deg, #000000, #505050, #272727);
   --bg-fixed: #ffff;
+  --bg-violet: linear-gradient(45deg, #000000, #171718, #111111);
+  --bg-indark: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
+  --bg-cert: linear-gradient(270deg, #e7d20e, #ffd000, #e7b100);
 
   --text-main: #2a2a2a;
   --text-muted: #333232;
@@ -370,14 +373,40 @@ html,body{
 }
 
 
-.container .content .social-links a{
+.container .content .links-ceertificate .social-links a{
     color: var(--text-main);
     transition: all 0.3s ease-in-out;
 }
 
-.container .content .social-links a:hover{
+.container .content .links-ceertificate .social-links a:hover{
     color: var(--accent);
     transform: translateY(-8px);
+}
+
+.links-ceertificate{
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.certificate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    width: 36%;
+    background: var(--bg-cert);
+    border-radius: 10PX;
+    color: var(--text-light);
+}
+
+.cer-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -511,7 +540,7 @@ html,body{
 }
 
 .box4{
-    grid-column: span 5 / span 5;
+    grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 9;
@@ -521,20 +550,21 @@ html,body{
     text-align: center;
     padding: 1rem;
     border: var(--border-light);
-    background-color: black;
+    background: var(--bg-violet);
 }
 
 .About-section .about-body .box4 .moto{
     width: 90%;
+    background: transparent;
 }
 
 .About-section .about-body .box4 h1{
     font-weight: 900;
-    color: var(--text-main);
-}
-
-.About-section .about-body .box4 h1 strong{
-    color: var(--accent);
+    background: var(--bg-indark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200%;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -594,6 +624,29 @@ html,body{
     color: var(--bg-main) !important;
 }
 
+.box6{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 9;
+    border: var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box6 .box6-body{
+    padding: 1rem;
+}
+
+.box6 .box6-body h1{
+    font-weight: 800;
+}
+
+.box6 .box6-body h1 span{
+    color: var(--accent);
+}
 
 .fade-up{
       opacity: 0;
@@ -1325,6 +1378,19 @@ footer{
     .proj1 img{
         display: block;
         height: 200px;
+    }
+
+    .box6 .box6-body h1{
+    font-weight: 800;
+    font-size: 1.7rem;
+   }
+
+    .certificate{
+        width: 100%;
+    }
+
+    .certificate .cer-body p{
+        font-size: 0.8rem;
     }
      
 }
