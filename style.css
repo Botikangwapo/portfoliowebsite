@@ -885,7 +885,6 @@ footer{
     }
     .container{
         height: auto;
-        padding-top: 1rem;
     }
     .container .content .content2 img{
         height: 500px;
@@ -1291,6 +1290,11 @@ footer{
 
     .services .services-body .serv1 .card .view{
         margin-top: 0 !important;
+    }
+
+    .services .services-body .serv1 .card .view button{
+        width: 45% !important;
+        padding: 0.8rem !important;
     }
 
     .services .services-body .serv1 .card{
