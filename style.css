@@ -423,7 +423,7 @@ html,body{
     border: var(--border-light);
     right: 0;
     top: 110%;
-    z-index: 9999;
+    z-index: 999;
     background-color: var(--bg-second);
     border-radius: 10px;
     opacity: 0;
@@ -756,7 +756,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 6rem 0;
 }
 
 .services-body{
@@ -934,7 +934,7 @@ html,body{
     justify-content: center;
     position: fixed;
     bottom: 2%;
-    z-index: 99999;
+    z-index: 1200;
 }
 
 .header-bttom-body{
@@ -981,13 +981,77 @@ footer{
     color: var(--text-main);
 }
 
+/* Contact Section */   
 
 .contact{
     height: 700px;
     width: 100%;
     background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.body-contact-content{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.body-contact-content form{
+    display: flex;
+    width: 40%;
+    border: var(--border-light);
+    border-radius: 10px;
+}
+
+.body-contact-content form .form-body{
+    padding: 1rem;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-contact-content form .form-body input{
+    width: auto;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    border: var(--border-light);
+}
+
+.body-contact-content form .form-body textarea{
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    padding: 1rem;
+    resize: none;
+    border: none;
+    border: var(--border-light);
+}
+
+.form-button button{
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-weight: 800;
+}
+
+.contact-content{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+}
 
 /* Responsive Design */
 @media (max-width: 1613px){
@@ -1215,7 +1279,7 @@ footer{
         height: 300PX;
     }
 
-    .box1, .box2, .box3, .box4, .box5 {
+    .box1, .box2, .box3, .box4, .box5, .box6 {
         grid-column: span 2 / span 2 !important;
         grid-row: auto !important;
         height: auto;
@@ -1480,6 +1544,15 @@ footer{
 
     .certificate .cer-body p{
         font-size: 0.8rem;
+    }
+
+    form{
+        width: 100% !important  ;
+    }
+
+    .body-contact-content{
+        flex-direction: column-reverse;
+        width: 90% !important;
     }
      
 }
