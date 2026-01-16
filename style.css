@@ -67,7 +67,7 @@
   --bg-third: #000000;
   --bg-gradient: linear-gradient(270deg, #000000, #505050, #272727);
   --bg-fixed: #ffff;
-  --bg-violet: linear-gradient(45deg, #000000, #171718, #111111);
+  --bg-violet: linear-gradient(45deg, #5100dc, #530ead, #0000ba);
   --bg-indark: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
   --bg-cert: linear-gradient(270deg, #e7d20e, #ffd000, #e7b100);
 
@@ -136,6 +136,8 @@ html,body{
     align-items: center;
     justify-content: center;
     background-color: var(--bg-second);
+    position: fixed;
+    z-index: 99999;
 }
 
 .header .navbar{
@@ -166,19 +168,19 @@ html,body{
     position: absolute;
     width: auto;
     right: 10%;
-    height:auto;
-    top: 8%;
+    top: 80%;
     border: var(--border-light);
     border-radius: 10px;
     padding: 0.7rem;
     opacity: 0;
-    z-index: 999;
+    z-index: 9999;
     background-color: var(--bg-second);
 }
 
 .modal.show{
     opacity: 1;
     transition: all 0.3s ease-in-out;
+    z-index: 9999;
 }
 
 .modal .modal-body{
@@ -246,6 +248,7 @@ html,body{
 .container{
     width: 100%;
     height: 900px;
+    padding-top: 3rem;
     background:var(--bg-second);
     background-size: cover;
     background-repeat: no-repeat;
@@ -400,6 +403,7 @@ html,body{
     background: var(--bg-cert);
     border-radius: 10PX;
     color: var(--text-light);
+     position: relative;
 }
 
 .cer-body{
@@ -407,7 +411,74 @@ html,body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    
 }
+
+.certificate .cer-body svg.scale{
+    transform: rotate(-180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-cert{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    border: var(--border-light);
+    right: 0;
+    top: 110%;
+    z-index: 9999;
+    background-color: var(--bg-second);
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.modal-cert.show{
+    opacity: 0;
+}
+
+
+.modal-cert .modal-cert-body{
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-cert .modal-cert-body p{
+    color: var(--text-main);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.modal-cert .modal-cert-body .ncii{
+    border: var(--border-light);
+    padding: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-cert .modal-cert-body .ncii svg{
+    color: var(--text-main);
+}
+
+.modal-cert .modal-cert-body .bestcoding{
+    border: var(--border-light);
+    padding: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-cert .modal-cert-body .bestcoding svg{
+    color: var(--text-main);
+}
+
+
 
 
 /* About Section */
@@ -855,7 +926,7 @@ html,body{
     justify-content: center;
     position: fixed;
     bottom: 2%;
-    z-index: 999;
+    z-index: 99999;
 }
 
 .header-bttom-body{
@@ -1307,9 +1378,11 @@ footer{
     }
     .container .content .button button:nth-child(1){
         width: 100%;
+        height: 60px;
     }
      .container .content .button button:nth-child(2){
-        width: 100%
+        width: 100%;
+        height: 60px;
     }
 
     .about-body{

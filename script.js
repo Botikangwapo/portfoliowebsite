@@ -53,3 +53,10 @@ window.addEventListener(_0x4f2e[16],()=>{
         _0x7g.style.overflow=_0x4f2e[18];
     },50);
 });
+
+const click = document.getElementById('click');
+const certBtn = document.querySelector('.modal-cert');
+
+click.addEventListener('click', ()=>{
+    certBtn.classList.toggle('show');
+});
