@@ -51,7 +51,7 @@ window.addEventListener(_0x4f2e[16],()=>{
         _0xc3[_0x4f2e[9]][_0x4f2e[12]](_0x4f2e[7]);
         _0x8h.style.overflow=_0x4f2e[18];
         _0x7g.style.overflow=_0x4f2e[18];
-    },3200);
+    },);
 });
 
 const click = document.getElementById('click');
@@ -59,4 +59,5 @@ const certBtn = document.querySelector('.modal-cert');
 
 click.addEventListener('click', ()=>{
     certBtn.classList.toggle('show');
+    
 });
