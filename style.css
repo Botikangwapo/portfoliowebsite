@@ -1599,7 +1599,7 @@ footer{
         
     }
     .character{
-        font-size: 1.6rem !important;
+        font-size: 1.4rem !important;
     }
     .container .content .button button:nth-child(1){
         width: 100%;
@@ -1717,4 +1717,5 @@ footer{
     }
     
      
+
 }
