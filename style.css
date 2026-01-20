@@ -67,7 +67,7 @@
   --bg-third: #000000;
   --bg-gradient: linear-gradient(270deg, #000000, #505050, #272727);
   --bg-fixed: #ffff;
-  --bg-violet: linear-gradient(45deg, #5100dc, #530ead, #0000ba);
+  --bg-violet: linear-gradient(45deg, #1d1d1d, #272727, #171717);
   --bg-indark: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
   --bg-cert: linear-gradient(270deg, #e7d20e, #ffd000, #e7b100);
 
@@ -897,6 +897,7 @@ html,body{
     height: 100%;
     object-fit: cover;
       border-radius: 10px;
+
 }
 
 .div2 {
@@ -1020,6 +1021,15 @@ html,body{
     height: 100%;
     object-fit: cover;
      border-radius: 10px;
+}
+
+.div1 img, .div2 img, .div3 img, .div4 img, .div5 img, .div6 img, .div7 img, .div8 img, .div9 img{
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.div1 img:hover, .div2 img:hover, .div3 img:hover, .div4 img:hover, .div5 img:hover, .div6 img:hover, .div7 img:hover, .div8 img:hover, .div9 img:hover{
+    filter: grayscale(0);
 }
 
 
@@ -1148,7 +1158,18 @@ footer{
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
-    height: 400px;
+}
+
+.contact-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    background: var(--bg-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200%;
+    -webkit-text-fill-color: transparent;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
 }
 
 /* Responsive Design */
