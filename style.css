@@ -423,7 +423,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0.8rem;
-    width: 36%;
+    width: clamp(150px, 100%, 320px);
     background: var(--bg-cert);
     border-radius: 10PX;
     color: var(--text-main);
@@ -734,7 +734,11 @@ body {
     padding: 0.8rem;
     font-size: 0.9rem;
     font-weight: 600;
+    position: relative;
+    overflow: hidden;
 }
+
+
 
 .tech1:hover,
 .tech2:hover,
@@ -744,9 +748,42 @@ body {
 .tech6:hover,
 .tech7:hover,
 .tech8:hover,
-.tech9:hover {
-    background-color: var(--bg-dark) !important;
-    color: var(--bg-main) !important;
+.tech9:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    color: var(--text-light);
+}
+
+.tech1::before,
+.tech2::before,
+.tech3::before,
+.tech4::before,
+.tech5::before,
+.tech6::before,
+.tech7::before,
+.tech8::before,
+.tech9::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform-origin: 0 0;
+    border-radius: 10px;
+}
+
+
+.tech1::before, .tech2::before, .tech3::before, .tech4::before, .tech5::before, .tech6::before, .tech7::before, .tech8::before, .tech9::before {
+    transform: scaleX(0);
+}
+
+.tech1:hover::before,.tech2:hover::before,.tech3:hover::before,.tech4:hover::before,.tech5:hover::before,.tech6:hover::before,.tech7:hover::before,.tech8:hover::before, .tech9:hover::before{
+    transform: scaleX(1);
 }
 
 .box6 {
@@ -837,7 +874,7 @@ body {
     position: relative;
 }
 
-.headservs h1::before{
+.headservs h1::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -1680,6 +1717,29 @@ footer {
     .services .services-body .serv-body .serv1 {
         height: auto;
         width: 100%;
+    }
+
+    .body-contact-content {
+        flex-direction: column-reverse;
+        width: 90% !important;
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+    .footer-body{
+        width: 90%;
+    }
+
+    .contact-content {
+        width: 100%;
+    }
+
+    .connect {
+        width: auto;
+        max-width: 100%;
+        height: auto;
     }
 
     /* 
