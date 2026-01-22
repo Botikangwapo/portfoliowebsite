@@ -108,6 +108,7 @@
         inset -2px -2px 5px rgba(255, 255, 255, 0.6);
 
     --bg-span: #0000;
+    --text-button: #ffffff;
 }
 
 body.dark-mode {
@@ -137,6 +138,7 @@ body.dark-mode {
         inset -2px -2px 6px rgba(255, 255, 255, 0.08);
 
     --bg-span: #2d2d2d00;
+    --text-button: #000000;
 }
 
 
@@ -424,8 +426,9 @@ body {
     width: 36%;
     background: var(--bg-cert);
     border-radius: 10PX;
-    color: var(--text-light);
+    color: var(--text-main);
     position: relative;
+    border: var(--border-light);
 }
 
 .cer-body {
@@ -811,7 +814,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10rem 0;
+    padding: 4rem 0;
+}
+
+.headservs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headservs h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    background: var(--bg-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200%;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.headservs h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    bottom: -3%;
 }
 
 .services-body {
@@ -922,6 +955,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .parent {
@@ -1213,7 +1247,7 @@ footer {
     border-radius: 10px;
     border: none;
     background-color: var(--bg-dark);
-    color: var(--text-light);
+    color: var(--text-button);
     font-weight: 800;
 }
 
@@ -1227,18 +1261,18 @@ footer {
 }
 
 .contact-content h1 {
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     background: var(--bg-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 200%;
     -webkit-text-fill-color: transparent;
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
-.contact-content p{
+.contact-content p {
     line-height: 1.6rem;
     font-size: 1.1rem;
     font-weight: normal;
