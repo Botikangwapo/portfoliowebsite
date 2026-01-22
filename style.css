@@ -106,6 +106,8 @@
     --shadow-mode:
         inset 2px 2px 5px rgba(0, 0, 0, 0.25),
         inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+
+    --bg-span: #0000;
 }
 
 body.dark-mode {
@@ -133,6 +135,8 @@ body.dark-mode {
 
     --shadow-mode: inset 2px 2px 6px rgba(0, 0, 0, 0.6),
         inset -2px -2px 6px rgba(255, 255, 255, 0.08);
+
+    --bg-span: #2d2d2d00;
 }
 
 
@@ -1242,12 +1246,13 @@ footer {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: var(--text-main);
 }
 
 .spaning-dot span:nth-child(1) {
     width: 30px;
     height: 10px;
-    background-color: #000000;
+    background-color: #ffd500;
     display: inline-block;
     border-radius: 10px;
 }
@@ -1255,7 +1260,7 @@ footer {
 .spaning-dot span:nth-child(2) {
     width: 20px;
     height: 10px;
-    background-color: #484848;
+    background-color: #b89a00;
     display: inline-block;
     border-radius: 10px;
 }
@@ -1263,7 +1268,7 @@ footer {
 .spaning-dot span:nth-child(3) {
     width: 10px;
     height: 10px;
-    background-color: #5e5e5e;
+    background-color: #9b8100;
     display: inline-block;
     border-radius: 10px;
 }
