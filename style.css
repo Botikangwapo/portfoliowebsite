@@ -1218,16 +1218,15 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .footer-body p {
     color: var(--text-main);
-    line-height: 1.6rem;
     font-size: 1.1rem;
     font-weight: normal;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
 }
 
@@ -1836,7 +1835,7 @@ footer {
     }
 
     .character {
-        font-size: clamp(1rem, 6vw, 5rem) !important;
+        font-size: clamp(1.4rem, 6vw, 5rem) !important;
     }
 
     .container .content .button button:nth-child(1) {
@@ -1861,10 +1860,14 @@ footer {
         font-size: 1rem !important;
     }
 
+    .About-section .about-body .box5 .box5-body {
+        width: 100% !important;
+    }
+
     .About-section .about-body .box5 .tech {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px !important;
-        width: auto;
+        width: 100% !important;
     }
 
     .About-section .about-content .box5 .tech,
@@ -1878,7 +1881,8 @@ footer {
     .tech8,
     .tech9 {
         padding: 0.4rem;
-
+        font-size: clamp(0.7rem, 4vw, 0.7rem);
+        font-weight: 900;
     }
 
     .About-section .about-body .box4 .moto {
