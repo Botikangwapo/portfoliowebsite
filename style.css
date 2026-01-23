@@ -327,7 +327,7 @@ body {
 }
 
 .container .content .character {
-    font-size: 4rem;
+    font-size: clamp(1.2rem, 5vw, 4rem);
     font-weight: 800;
     background: var(--bg-gradient);
     background-clip: text;
@@ -751,7 +751,7 @@ body {
 .tech9:hover{
     transform: scale(1.05);
     transition: 0.3s ease;
-    color: var(--text-light);
+    color: var(--text-button);
 }
 
 .tech1::before,
@@ -770,7 +770,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--bg-dark);
     z-index: -1;
     transition: transform 0.3s ease;
     transform-origin: 0 0;
@@ -1359,6 +1359,7 @@ footer {
 
 
 /* Responsive Design */
+
 @media (max-width: 1613px) {
     .services .services-body .serv-body .serv1 {
         height: auto;
@@ -1835,7 +1836,7 @@ footer {
     }
 
     .character {
-        font-size: 1.4rem !important;
+        font-size: clamp(1rem, 6vw, 5rem) !important;
     }
 
     .container .content .button button:nth-child(1) {
