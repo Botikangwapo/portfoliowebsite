@@ -125,7 +125,7 @@ body.dark-mode {
     --accent-hover: #00ff88;
 
     --border-light: #ffffff1e solid 1px;
-    --border-second: #ffffff4f solid 1px;
+    --border-second:  #ffffff43 solid 1px;
 
     --shadow-soft: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
 
@@ -147,6 +147,7 @@ html,
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: var(--bg-main);
 }
 
 /* Header Section */
@@ -423,7 +424,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0.8rem;
-    width: clamp(150px, 100%, 320px);
+    width: clamp(150px, 100%, 36.4%);
     background: var(--bg-cert);
     border-radius: 10PX;
     color: var(--text-main);
@@ -773,17 +774,17 @@ body {
     background-color: var(--bg-dark);
     z-index: -1;
     transition: transform 0.3s ease;
-    transform-origin: 0 0;
+    transform-origin: 0 0 ;
     border-radius: 10px;
 }
 
 
 .tech1::before, .tech2::before, .tech3::before, .tech4::before, .tech5::before, .tech6::before, .tech7::before, .tech8::before, .tech9::before {
-    transform: scaleX(0);
+    transform: scaleY(0);
 }
 
 .tech1:hover::before,.tech2:hover::before,.tech3:hover::before,.tech4:hover::before,.tech5:hover::before,.tech6:hover::before,.tech7:hover::before,.tech8:hover::before, .tech9:hover::before{
-    transform: scaleX(1);
+    transform: scaleY(1);
 }
 
 .box6 {
@@ -1503,6 +1504,10 @@ footer {
         height: auto;
         padding: 0.8rem;
     }
+
+    .services .services-body .serv1 .card p {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -1711,6 +1716,13 @@ footer {
     }
     Projects Section */
 
+    .container .content .content1 {
+       width: 100%;
+    } 
+
+    .certificate{
+        width: clamp(150px, 100%, 100%);   
+    }
 }
 
 @media (max-width: 646px) {
@@ -1825,6 +1837,7 @@ footer {
 
     .content1 {
         gap: 10px !important;
+        width: 95% !important;
     }
 
     .content2 img {
