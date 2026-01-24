@@ -61,3 +61,35 @@ click.addEventListener('click', ()=>{
     certBtn.classList.toggle('show');
     
 });
+
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('send-btn');
+const modal = document.getElementById('modal');
+const closeModal = document.getElementById('close-modal');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  btn.innerHTML = 'S E N D I N G...';
+  btn.disabled = true;
+
+  emailjs.sendForm(
+    'service_mbkbwzq',
+    'template_yofoi6b',
+    this
+  ).then(() => {
+    btn.innerHTML = 'S E N D  M E S S A G E';
+    btn.disabled = false;
+    modal.style.display = 'flex';
+    form.reset();
+  }).catch((error) => {
+    alert('Failed to send email 😢');
+    btn.innerHTML = 'S E N D  M E S S A G E';
+    btn.disabled = false;
+    console.error(error);
+  });
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});

@@ -70,7 +70,8 @@
                 <h1 class="character">MARK JERVIN VILLONES</h1>
                 <p class="paragrap">Aspiring to become a Front-End Developer Based in the Philippines</p>
                 <div class="button">
-                    <button><a href="Mark Jervin Villones - Resume.pdf" download="Mark Jervin Villones - Resume.pdf">D O W N L O A D C V</a></button>
+                    <button><a href="Mark Jervin Villones - Resume.pdf" download="Mark Jervin Villones - Resume.pdf">D O
+                            W N L O A D C V</a></button>
                     <button>C O N N E C T N O W</button>
                 </div>
                 <div class="links-ceertificate">
@@ -458,7 +459,7 @@
         <div class="headservs" data-aos="fade-up">
             <h1>PROJECT</h1>
         </div>
-        <div class="parent"  data-aos="fade-up">
+        <div class="parent" data-aos="fade-up">
             <div class="div1">
                 <img src="img/Screenshot 2025-09-17 175037.png" alt="">
             </div>
@@ -491,14 +492,14 @@
 
 
     <div class="contact" id="contact">
-        <div class="body-contact-content"  data-aos="fade-up">
-            <form>
+        <div class="body-contact-content" data-aos="fade-up">
+            <form id="contactForm">
                 <div class="form-body">
-                    <input type="text" name="" id="" placeholder="Full name">
-                    <input type="text" name="" id="" placeholder="Gmail@com">
-                    <textarea name="" id="" placeholder="Message"></textarea>
+                    <input type="text" name="from_name" id="" placeholder="Full name">
+                    <input type="text" name="from_email" id="" placeholder="Gmail@com">
+                    <textarea name="message" id="" placeholder="Message"></textarea>
                     <div class="form-button">
-                        <button>S E N D M E S S A G E</button>
+                        <button type="submit" id="send-btn">S E N D M E S S A G E</button>
                     </div>
                 </div>
             </form>
@@ -512,12 +513,19 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>   
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="modal" class="modals">
+        <div class="modal-contents">
+            <h2>Sent Successfully!</h2>
+            <p>Your message has been sent.</p>
+            <button id="close-modal">OK</button>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-body">
@@ -530,6 +538,11 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("17z0ZVnsFuf-4s8hC");
+    </script>
+
 </body>
 
 </html>
