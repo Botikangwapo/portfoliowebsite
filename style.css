@@ -782,11 +782,11 @@ body {
 
 
 .tech1::before, .tech2::before, .tech3::before, .tech4::before, .tech5::before, .tech6::before, .tech7::before, .tech8::before, .tech9::before {
-    transform: scaleY(0);
+    transform: scaleX(0);
 }
 
 .tech1:hover::before,.tech2:hover::before,.tech3:hover::before,.tech4:hover::before,.tech5:hover::before,.tech6:hover::before,.tech7:hover::before,.tech8:hover::before, .tech9:hover::before{
-    transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 .box6 {
