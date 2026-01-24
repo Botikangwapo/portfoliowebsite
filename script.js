@@ -83,7 +83,7 @@ form.addEventListener('submit', function (e) {
     modal.style.display = 'flex';
     form.reset();
   }).catch((error) => {
-    alert('Failed to send email 😢');
+    alert('Failed to send email. Please try again later.');
     btn.innerHTML = 'S E N D  M E S S A G E';
     btn.disabled = false;
     console.error(error);
