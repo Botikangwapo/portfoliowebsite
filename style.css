@@ -109,6 +109,8 @@
 
     --bg-span: #0000;
     --text-button: #ffffff;
+
+    --hovers-: #eeeeee;
 }
 
 body.dark-mode {
@@ -139,6 +141,8 @@ body.dark-mode {
 
     --bg-span: #2d2d2d00;
     --text-button: #000000;
+
+    --hovers-: #2a2a2a;
 }
 
 
@@ -276,6 +280,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     animation: color 12s ease-in-out infinite;
 }
 
@@ -506,7 +511,7 @@ body {
 
 .modal-cert .modal-cert-body .bestcoding:hover,
 .modal-cert .modal-cert-body .ncii:hover {
-    background-color: #dfdfdf;
+    background-color: var(--hovers-);
 }
 
 .modal-cert .modal-cert-body .bestcoding svg {
