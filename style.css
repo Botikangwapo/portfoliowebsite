@@ -374,7 +374,14 @@ body {
     background-color: var(--bg-third);
     color: var(--text-light);
     border: var(--border-second);
+   
+}
 
+.container .content .button button:nth-child(1) a{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .container .content .button button:nth-child(1):hover {
@@ -394,6 +401,13 @@ body {
     border-radius: 10px;
     border: var(--border-light);
     background-color: var(--bg-fixed);
+}
+
+.container .content .button button:nth-child(2) a{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .container .content .button button:nth-child(2):hover {
@@ -428,12 +442,19 @@ body {
     width: 100%;
 }
 
+.links-body{
+    display: flex;
+    width: clamp(100% ,100%, 37.4%);
+    gap: 10px;
+}
+
+
 .certificate {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.8rem;
-    width: clamp(150px, 100%, 36.4%);
+    width: clamp(150px, 100%, 37.4%);
     background: var(--bg-cert);
     border-radius: 10PX;
     color: var(--text-main);
@@ -452,6 +473,10 @@ body {
 .certificate .cer-body svg.scale {
     transform: rotate(-180deg);
     transition: all 0.3s ease-in-out;
+}
+
+.certificate .cer-body p{
+    color: #2d2d2d;
 }
 
 .modal-cert {
@@ -1970,7 +1995,7 @@ footer {
     }
 
     .certificate {
-        width: 100%;
+        width: auto;
     }
 
     .certificate .cer-body p {
@@ -2012,6 +2037,10 @@ footer {
         width: auto;
         max-width: 100%;
         height: auto;
+    }   
+
+    .links-body{
+        flex-direction: column;
     }
 
 }
