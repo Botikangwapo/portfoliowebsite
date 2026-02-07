@@ -86,7 +86,7 @@
     --bg-indark: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
     --bg-cert: linear-gradient(270deg, #e7d20e, #ffd000, #e7b100);
 
-    --text-main: #2a2a2a;
+    --text-main: #383838;
     --text-muted: #333232;
     --text-light: #ffffff;
 
@@ -882,16 +882,6 @@ body {
     position: relative;
 }
 
-.headservs h1::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 8px;
-    background-color: var(--accent);
-    border-radius: 5px;
-    bottom: -3%;
-}
-
 .services-body {
     width: 90%;
     display: flex;
@@ -1212,8 +1202,9 @@ body {
 
 .header-bttom-body a:hover {
     background-color: var(--accent);
-    transition: all 0.3s ease-in-out;
-    outline: auto;
+    transition: all 0.3s ease-in-out;   
+    outline: none;
+    color: #ffff;
 }
 
 
