@@ -88,7 +88,7 @@
 
     --text-main: #383838;
     --text-muted: #333232;
-    --text-light: #c1c1c1;
+    --text-light: #ffffff;
 
     --accent: #ffae00;
     --darker: #000a9a;
@@ -283,7 +283,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation: color 12s ease-in-out infinite;
 }
 
 @keyframes color {
