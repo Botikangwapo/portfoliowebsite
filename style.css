@@ -100,7 +100,7 @@
         0 4px 6px -2px rgba(209, 214, 255, 0.74);
 
     --bg-filter: blur(20px);
-    --bg-blur: rgba(255, 255, 255, 0.51);
+    --bg-blur: rgba(0, 0, 0, 0.121);
 
 
     --shadow-mode:
@@ -176,7 +176,7 @@ body {
     color: var(--accent);
     font-family: "Archivo Black", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .modes {
@@ -1909,7 +1909,7 @@ footer {
     .tech7,
     .tech8,
     .tech9 {
-        padding: 0.7rem;
+        padding: 0.6rem;
         font-size: clamp(0.7rem, 4vw, 0.7rem);
         font-weight: 700;
     }
