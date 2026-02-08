@@ -275,7 +275,7 @@ body {
 .container {
     width: 100%;
     height: 900px;
-    background: var(--bg-second);
+    background: var(--bg-main);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2085,3 +2085,35 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.experience-card {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  background-color: var(--bg-second);
+}
+
+.exp-item i {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.exp-item h3 {
+  font-size: 24px;
+  margin: 5px 0;
+  color: var(--text-main);
+}
+
+.exp-item p {
+  font-size: 14px;
+  color: var(--text-main);
+}
+
