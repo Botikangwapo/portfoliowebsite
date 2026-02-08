@@ -70,6 +70,15 @@ const closeModal = document.getElementById('close-modal');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
+  const name = form.querySelector('[name="from_name"]').value.trim();
+  const email = form.querySelector('[name="from_email"]').value.trim();
+  const message = form.querySelector('[name="message"]').value.trim();
+
+  if (!name || !email || !message) {
+    alert("All field are required")
+    return; 
+  }
+
   btn.innerHTML = 'S E N D I N G...';
   btn.disabled = true;
 
@@ -89,6 +98,7 @@ form.addEventListener('submit', function (e) {
     console.error(error);
   });
 });
+
 
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';

@@ -120,7 +120,7 @@ body.dark-mode {
     --bg-second: #141414;
     --bg-dark: #ffffff;
 
-    --text-main: #d1d1d1;
+    --text-main: #b7b7b7;
     --text-muted: #cfcfcf;
 
     --accent: #ffae00;
@@ -887,7 +887,7 @@ body {
 .services .services-body .serv-body .serv1 {
     width: 100%;
     max-width: 466px;
-    height: 290px;
+    height: auto;
     background-color: var(--bg-main);
     display: flex;
     justify-content: center;
@@ -919,8 +919,8 @@ body {
 
 .services .services-body .serv1 .card .head {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 25px;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -1909,9 +1909,9 @@ footer {
     .tech7,
     .tech8,
     .tech9 {
-        padding: 0.4rem;
+        padding: 0.7rem;
         font-size: clamp(0.7rem, 4vw, 0.7rem);
-        font-weight: 900;
+        font-weight: 700;
     }
 
     .About-section .about-body .box4 .moto {
@@ -2016,6 +2016,53 @@ footer {
 
 }
 
+/* .inputmuna{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.input-content{
+  width: clamp(300px, 80%, 500px);
+  background: var(--bg-main);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-content h2{
+     font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    color: rgb(255, 35, 35)
+}
+
+.input-content p{
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--text-main);
+}
+
+.input-content #close-modal{
+    padding: 13px;
+    border: none;
+    background-color: var(--bg-dark);
+    color: var(--text-button);
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+} */
 
 .modals {
   display: none;
