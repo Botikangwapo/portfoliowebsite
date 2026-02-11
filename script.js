@@ -99,29 +99,6 @@ form.addEventListener('submit', function (e) {
   });
 });
 
-const counters = document.querySelectorAll('.count');
-
-const speed = 200; // lower = faster
-
-counters.forEach(counter => {
-  const updateCount = () => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
-
-    const increment = target / speed;
-
-    if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(updateCount, 10);
-    } else {
-      counter.innerText = target;
-    }
-  };
-
-  updateCount();
-});
-
-
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });

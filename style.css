@@ -162,7 +162,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-second);
+    background-color: var(--bg-main);
 }
 
 .header .navbar {
@@ -601,6 +601,9 @@ body {
 
 .About-section .about-body .box2 .about-content h3 {
     color: var(--text-main);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .About-section .about-body .box2 .about-content p {
@@ -720,6 +723,12 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.About-section .about-body .box5 .box5-body .tech-head h3{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .About-section .about-body .box5 .tech h1 {
@@ -2101,7 +2110,7 @@ footer {
 }
 
 .exp-item i {
-  font-size: 32px;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   color: var(--accent);
 }
@@ -2110,6 +2119,9 @@ footer {
   font-size: 24px;
   margin: 5px 0;
   color: var(--text-main);
+font-family: "Archivo Black", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .exp-item p {
