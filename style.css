@@ -62,7 +62,7 @@
 
     0%,
     100% {
-        transform: scaleY(0.4);
+        transform: scaleY(0.3);
         opacity: 0.6;
     }
 
@@ -73,76 +73,76 @@
 }
 
 :root {
+  --bg-main: #f5f5f5;
+  --bg-glass: rgba(255, 255, 255, 0.55);
+  --bg-card: #ffffff;
+  --bg-dark: #121212;
+  --bg-second: #eeeeee;
+  --bg-third: #1c1c1c;
 
-    --bg-main: #ffffff;
-    --bg-glass: rgba(255, 255, 255, 0.35);
-    --bg-card: #ffffff;
-    --bg-dark: #000000;
-    --bg-second: #fafafa;
-    --bg-third: #000000;
-    --bg-gradient: linear-gradient(270deg, #000000, #505050, #272727);
-    --bg-fixed: #ffff;
-    --bg-violet: linear-gradient(45deg, #1d1d1d, #272727, #171717);
-    --bg-indark: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
-    --bg-cert: linear-gradient(270deg, #e7d20e, #ffd000, #e7b100);
+  --bg-gradient: linear-gradient(270deg, #111111, #2b2b2b, #1a1a1a);
+  --bg-fixed: #ffffff;
 
-    --text-main: #383838;
-    --text-muted: #333232;
-    --text-light: #ffffff;
+  --bg-violet: linear-gradient(45deg, #1c1c1c, #2a2a2a, #141414);
+  --bg-indark: linear-gradient(270deg, #ffffff, #e8e8e8, #dcdcdc);
 
-    --accent: #ffae00;
-    --darker: #000a9a;
-    --accent-hover: #109C08;
+  /* Softer Gold */
+  --bg-cert: linear-gradient(270deg, #f5d76e, #e6c200, #cfa500);
 
-    --border-light: 1px solid rgba(0, 0, 0, 0.144);
+  --text-main: #2c2c2c;
+  --text-muted: #555555;
+  --text-light: #ffffff;
 
-    --shadow-soft: 0 10px 15px -3px rgb(230, 230, 230),
-        0 4px 6px -2px rgba(209, 214, 255, 0.74);
+  /* Premium gold accent (not neon) */
+  --accent: #e6c200;
+  --darker: #b38f00;
+  --accent-hover: #cfa500;
 
-    --bg-filter: blur(20px);
-    --bg-blur: rgba(0, 0, 0, 0.064);
+  --border-light: 1px solid rgba(0, 0, 0, 0.08);
 
+  --shadow-soft: 0 10px 20px -8px rgba(0, 0, 0, 0.12);
 
-    --shadow-mode:
-        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
-        inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+  --bg-filter: blur(18px);
+  --bg-blur: rgba(0, 0, 0, 0.04);
 
-    --bg-span: #0000;
-    --text-button: #ffffff;
+  --shadow-mode: inset 2px 2px 5px rgba(0, 0, 0, 0.08),
+                 inset -2px -2px 5px rgba(255, 255, 255, 0.6);
 
-    --hovers-: #eeeeee;
+  --bg-span: #0000;
+  --text-button: #ffffff;
+  --hovers-: #e9e9e9;
 }
 
 body.dark-mode {
-    --bg-main: #0f0f0f;
-    --bg-glass: rgba(0, 0, 0, 0.55);
-    --bg-card: #1a1a1a;
-    --bg-second: #141414;
-    --bg-dark: #ffffff;
+  --bg-main: #0e0e0e;
+  --bg-glass: rgba(18, 18, 18, 0.65);
+  --bg-card: #181818;
+  --bg-second: #141414;
+  --bg-dark: #ffffff;
 
-    --text-main: #c8c8c8;
-    --text-muted: #e9e9e9;
+  --text-main: #e4e4e4;
+  --text-muted: #bdbdbd;
 
-    --accent: #ffae00;
-    --accent-hover: #00ff88;
+  /* Gold adjusted for dark */
+  --accent: #f0c419;
+  --accent-hover: #ffd84d;
 
-    --border-light: #ffffff1e solid 1px;
-    --border-second:  #ffffff43 solid 1px;
+  --border-light: 1px solid rgba(255, 255, 255, 0.07);
+  --border-second: 1px solid rgba(255, 255, 255, 0.12);
 
-    --shadow-soft: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+  --shadow-soft: 0 10px 25px -10px rgba(0, 0, 0, 0.8);
 
-    --bg-filter: blur(20px);
-    --bg-blur: rgba(255, 255, 255, 0.088);
+  --bg-filter: blur(18px);
+  --bg-blur: rgba(255, 255, 255, 0.03);
 
-    --bg-gradient: linear-gradient(270deg, #ffffff, #dadada, #cfcfcf);
+  --bg-gradient: linear-gradient(270deg, #b4b4b4, #878787, #9f9f9f);
 
-    --shadow-mode: inset 2px 2px 6px rgba(0, 0, 0, 0.6),
-        inset -2px -2px 6px rgba(255, 255, 255, 0.08);
+  --shadow-mode: inset 2px 2px 6px rgba(0, 0, 0, 0.7),
+                 inset -2px -2px 6px rgba(255, 255, 255, 0.04);
 
-    --bg-span: #2d2d2d00;
-    --text-button: #000000;
-
-    --hovers-: #2a2a2a;
+  --bg-span: #2d2d2d00;
+  --text-button: #000000;
+  --hovers-: #222222;
 }
 
 
