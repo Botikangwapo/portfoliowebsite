@@ -49,7 +49,7 @@ window.addEventListener("load", () => {
     loader.classList.add("hide");
     html.style.overflow = "auto";
     body.style.overflow = "auto";
-  }, 100); 
+  }, 3200); 
 });
 
 const click = document.getElementById('click');
