@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease, fill 0.5s ease;
+    transition: color 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease, fill 0.5s ease;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
 }
@@ -79,6 +79,7 @@
   --bg-dark: #121212;
   --bg-second: #eeeeee;
   --bg-third: #1c1c1c;
+--bg--fourth: #c2c2c2;
 
   --bg-gradient: linear-gradient(270deg, #111111, #2b2b2b, #1a1a1a);
   --bg-fixed: #ffffff;
@@ -94,9 +95,9 @@
   --text-light: #ffffff;
 
   /* Premium gold accent (not neon) */
-  --accent: #e6c200;
-  --darker: #b38f00;
-  --accent-hover: #cfa500;
+  --accent: #2563eb;
+  --darker: #2563eb;
+  --accent-hover: #2563eb;
 
   --border-light: 1px solid rgba(0, 0, 0, 0.08);
 
@@ -119,12 +120,12 @@ body.dark-mode {
   --bg-card: #181818;
   --bg-second: #141414;
   --bg-dark: #ffffff;
+  --bg--fourth: #292929;
 
   --text-main: #e4e4e4;
   --text-muted: #bdbdbd;
 
   /* Gold adjusted for dark */
-  --accent: #f0c419;
   --accent-hover: #ffd84d;
 
   --border-light: 1px solid rgba(255, 255, 255, 0.07);
@@ -179,95 +180,34 @@ body {
     font-weight: 500;
 }
 
-.modes {
+.modes{
+       transition: all 3s ease-in-out;
+          border: 3px solid var(--accent);
+}
+
+.modal{
+    width: 44px;
+    height: 22px;
+    background-color: var(--bg--fourth);
     position: relative;
-    cursor: pointer;
+    border: 3px solid white;
+    padding: 0.1rem;
 }
 
-.modes p {
-    color: var(--text-main);
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.modal {
+.modal-body{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    width: auto;
-    right: 0;
-    top: 150%;
-    border: var(--border-light);
-    border-radius: 10px;
-    padding: 0.7rem;
-    opacity: 0;
-    z-index: 9999;
-    background-color: var(--bg-second);
+    transition: transform 0.3s ease-in-out;
 }
 
-.modal.show {
-    opacity: 1;
-    z-index: 9999;
-}
-
-.modal .modal-body {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.modal .modal-body .lightmode {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0.4rem;
-    border-radius: 12px;
-    border: var(--border-light);
-    cursor: pointer;
-    background-color: var(--bg-second);
-}
-
-.modal .modal-body .darkmode {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    border: var(--border-light);
-    padding: 0.4rem;
-    border-radius: 12px;
-    cursor: pointer;
-    background-color: var(--bg-second);
-}
-
-.modal .modal-body .lightmode p {
-    color: var(--text-main);
-    font-size: 0.9rem;
-    margin-right: 8px;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.modal .modal-body .darkmode p {
-    color: var(--text-main);
-    font-size: 0.9rem;
-    margin-right: 8px;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.modal .modal-body .lightmode svg {
-    font-size: 1.2rem;
-    color: var(--accent);
-}
-
-.modal .modal-body .darkmode svg {
-    font-size: 1.2rem;
-    color: var(--darker);
+.modal-body.moveleft{
+    transform: translateX(22px);
+        transition: transform 0.3s ease-in-out;
 }
 
 /* Home Section */

@@ -1,8 +1,6 @@
-const darkToggle = document.querySelector(".darkmode");
-const lightToggle = document.querySelector(".lightmode");
-const bodydark = document.querySelector(".darkmode-body");
 const mode = document.querySelector(".modes");
 const modal = document.querySelector(".modal");
+const modalbody = document.querySelector(".modal-body");
 const themeLoader = document.querySelector(".theme-loader");
 const body = document.body;
 const html = document.documentElement;
@@ -11,35 +9,6 @@ const btn = document.getElementById('send-btn');
 const modals = document.getElementById('modal');
 const closeModal = document.getElementById('close-modal');
 
-function showmodal() {
-  modal.classList.toggle("show");
-}
-
-function removemodal() {
-  modal.classList.remove("show");
-}
-
-mode.addEventListener("click", (e) => {
-  e.stopPropagation();
-  showmodal()
-});
-
-document.addEventListener("click", () => {
-  removemodal();
-}); 
-
-
-lightToggle.addEventListener("click", () => {
-  document.body.classList.remove("dark-mode");
-  bodydark.classList.remove("active");
-  e.stopPropagation(); 
-}); 
-
-darkToggle.addEventListener("click", () => {
-  document.body.classList.add("dark-mode");
-  bodydark.classList.add("active");
-  e.stopPropagation(); 
-});
 
 window.addEventListener("load", () => {
   html.style.overflow = "hidden";
@@ -49,7 +18,7 @@ window.addEventListener("load", () => {
     loader.classList.add("hide");
     html.style.overflow = "auto";
     body.style.overflow = "auto";
-  }, 3200); 
+  }, 100);
 });
 
 const click = document.getElementById('click');
@@ -93,4 +62,9 @@ form.addEventListener('submit', function (e) {
 
 closeModal.addEventListener('click', () => {
   modals.style.display = 'none';
+});
+
+mode.addEventListener("click", () => {
+   modalbody.classList.toggle("moveleft");
+   body.classList.toggle("dark-mode");
 });
