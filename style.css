@@ -242,7 +242,7 @@ body {
 .container .content {
     display: flex;
     align-items: center;
-    justify-content: space-between  ;
+    justify-content: center;
     gap: 15px;
     width: 80%;
 }
@@ -323,7 +323,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-      text-decoration: none;
+    text-decoration: none;
     color: var(--text-muted);
 }
 
@@ -548,7 +548,7 @@ body {
 }
 
 .About-section .about-body .box2 .about-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.7rem;
     color: var(--text-main);
     font-family: "Outfit", sans-serif;
