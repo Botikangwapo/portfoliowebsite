@@ -38,8 +38,6 @@ function cert() {
   });
 }
 
-cert();
-preloader();
 
 function emailjs() {
   form.addEventListener('submit', function (e) {

@@ -75,7 +75,7 @@
 :root {
   --bg-main: #f5f5f5;
   --bg-glass: rgba(255, 255, 255, 0.55);
-  --bg-card: #f0f1f5;
+  --bg-card: #f7f7f7;
   --bg-dark: #121212;
   --bg-second: #eeeeee;
   --bg-third: #1c1c1c;
@@ -117,7 +117,7 @@
 body.dark-mode {
   --bg-main: #0e0e0e;
   --bg-glass: rgba(18, 18, 18, 0.65);
-  --bg-card: #181818;
+  --bg-card: #131313;
   --bg-second: #141414;
   --bg-dark: #ffffff;
   --bg--fourth: #292929;
@@ -177,12 +177,11 @@ body {
     color: var(--accent);
     font-family: "Archivo Black", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 100;
 }
 
 .modes{
-       transition: all 3s ease-in-out;
-          border: 3px solid var(--accent);
+    transition: all 3s ease-in-out;
 }
 
 .modal{
@@ -190,8 +189,8 @@ body {
     height: 22px;
     background-color: var(--bg--fourth);
     position: relative;
-    border: 3px solid white;
-    padding: 0.1rem;
+    padding: 0.2rem;
+    border-radius: 20px;
 }
 
 .modal-body{
@@ -203,11 +202,12 @@ body {
     background-color: rgb(255, 255, 255);
     position: absolute;
     transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .modal-body.moveleft{
     transform: translateX(22px);
-        transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Home Section */
@@ -292,7 +292,7 @@ body {
 }
 
 .container .content .paragrap {
-    color: var(--text-main);
+    color: var(--text-muted);
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: "Outfit", sans-serif;
@@ -324,7 +324,7 @@ body {
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    color: var(--text-muted);
+    color: var(--text-main);
 }
 
 .container .content .button button:nth-child(1):hover {
@@ -550,7 +550,7 @@ body {
 .About-section .about-body .box2 .about-content p {
     font-size: 1rem;
     line-height: 1.7rem;
-    color: var(--text-main);
+    color: var(--text-muted);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -633,6 +633,9 @@ body {
     -webkit-background-clip: text;
     background-size: 200%;
     -webkit-text-fill-color: transparent;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -776,7 +779,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0;
 }
 
 .headservs {
@@ -795,7 +797,7 @@ body {
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -861,7 +863,7 @@ body {
 }
 
 .services .services-body .serv1 .card p {
-    color: var(--text-main);
+    color: var(--text-muted);
     line-height: 1.6rem;
     font-size: 1.2rem;
     font-weight: normal;
@@ -903,7 +905,7 @@ body {
     width: 100%;
     height: auto;
     background: var(--bg-main);
-    padding-top: 5rem;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1138,7 +1140,7 @@ footer {
 }
 
 .footer-body p {
-    color: var(--text-main);
+    color: var(--text-muted);
     font-size: 1.1rem;
     font-weight: normal;
     font-family: "Outfit", sans-serif;
@@ -1370,7 +1372,7 @@ footer {
 
     .container {
         width: 100%;
-        height: 700px;
+        height: auto;
     }
 
     .container .content {
@@ -1845,6 +1847,10 @@ footer {
         font-weight: 900;
     }
 
+    .services{
+        padding-top: 5rem;
+    }
+
     .services .services-body .serv1 .card .view {
         margin-top: 0 !important;
     }
@@ -1875,6 +1881,10 @@ footer {
         height: auto !important;
         width: 100%;
         padding: 1rem;
+    }
+
+    .project{
+        padding-top: 5rem;
     }
 
     .proj1 {
@@ -2068,7 +2078,7 @@ footer {
 
 .exp-item p {
   font-size: 14px;
-  color: var(--text-main);
+  color: var(--text-muted);
       font-weight: normal;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
