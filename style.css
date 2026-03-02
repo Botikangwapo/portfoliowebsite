@@ -89,6 +89,7 @@
 
   /* Softer Gold */
   --bg-cert: linear-gradient(270deg, #f5d76e, #e6c200, #cfa500);
+     --bg-dot: radial-gradient(circle, rgba(0, 0, 0, 0.127) 1px, transparent 1px);
 
   --text-main: #2c2c2c;
   --text-muted: #555555;
@@ -132,6 +133,7 @@ body.dark-mode {
   --border-second: 1px solid rgba(255, 255, 255, 0.12);
 
   --shadow-soft: 0 10px 25px -10px rgba(0, 0, 0, 0.8);
+  --bg-dot: radial-gradient(circle, rgba(255, 255, 255, 0.127) 1px, transparent 1px);
 
   --bg-filter: blur(18px);
   --bg-blur: rgba(255, 255, 255, 0.03);
@@ -153,6 +155,8 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: var(--bg-main);
+    background-image: var(--bg-dot);
+    background-size: 25px 25px;
 }
 
 /* Header Section */
@@ -215,10 +219,9 @@ body {
 .container {
     width: 100%;
     height: 900px;
-    background: var(--bg-main);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: var(--bg-main);
+    background-image: var(--bg-dot);
+    background-size: 25px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,7 +339,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
     padding-top: 8px;
 }
 
@@ -344,6 +347,11 @@ body {
 .container .content .button .social-links a {
     color: var(--text-main);
     transition: all 0.3s ease-in-out;
+}
+
+.container .content .button .social-links a i{
+    font-size: 1.8rem;
+
 }
 
 .container .content .button .social-links a:hover {
@@ -475,7 +483,9 @@ body {
 .About-section {
     width: 100%;
     height: auto;
-    background-color: var(--bg-main);
+     background-color: var(--bg-main);
+    background-image: var(--bg-dot);
+    background-size: 25px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -775,7 +785,9 @@ body {
 .services {
     width: 100%;
     height: auto;
-    background: var(--bg-main);
+     background-color: var(--bg-main);
+    background-image: var(--bg-dot);
+    background-size: 25px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -904,7 +916,9 @@ body {
 .project {
     width: 100%;
     height: auto;
-    background: var(--bg-main);
+     background-color: var(--bg-main);
+    background-image: var(--bg-dot);
+    background-size: 25px 25px;
     padding-top: 1rem;
     display: flex;
     align-items: center;
@@ -1139,6 +1153,10 @@ footer {
     text-align: center;
 }
 
+.form-body{
+    background-color: var(--bg-main);
+}
+
 .footer-body p {
     color: var(--text-muted);
     font-size: 1.1rem;
@@ -1153,7 +1171,9 @@ footer {
 .contact {
     height: 700px;
     width: 100%;
-    background-color: var(--bg-card);
+     background-color: var(--bg-main);
+    background-image: var(--bg-dot);
+    background-size: 25px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1720,49 +1740,6 @@ footer {
 
 
 @media (max-width: 458px) {
-
-    .header .navbar {
-        width: 90%;
-    }
-
-    .menutoggle {
-        display: flex;
-    }
-
-    .menutoggle i {
-        font-size: 1.5rem;
-        color: var(--text-main);
-    }
-
-    .header .navbar .navlinks {
-        top: 0;
-        right: 0;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.815);
-        backdrop-filter: blur(20px);
-        height: 100vh;
-        width: 0%;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .header .navbar .navlinks.open {
-        width: 300px;
-    }
-
-    .header .navbar .navlinks.close {
-        opacity: 0;
-    }
-
-    .header .navbar .navlinks ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        top: 40%;
-        left: 36%;
-        position: absolute;
-    }
-
-
     .container {
         height: auto;
     }
